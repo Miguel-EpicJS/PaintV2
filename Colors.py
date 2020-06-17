@@ -1,0 +1,13 @@
+class Colors:
+    white = (255, 255, 255)
+    black = (1, 1, 1)
+    blue = (0, 0, 255)
+    red = (255, 0, 0)
+    green = (0, 255, 0)
+    yellow = (255, 255, 0)
+    orange = (255, 165, 0)
+    purple = (160, 32, 240)
+    cyan = (0, 255, 255)
+    seaGreen = (84, 255, 169)
+    orangeRed = (255, 69, 0)
+    slateBlue = (131, 111, 255)
