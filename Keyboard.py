@@ -2,10 +2,13 @@ import pygame
 
 class KeyBoard:
 
-    def CleanScreen(self, screen):
+    def CleanScreen(self):
         key = pygame.key.get_pressed()
         if key[pygame.K_SPACE]:
-            screen.fill((255, 255, 255));
+
+            return True
+
+
 
     def DrawRect(self):
         ok = False
@@ -22,3 +25,4 @@ class KeyBoard:
             ok = True
 
         return ok
+
