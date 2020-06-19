@@ -2,9 +2,13 @@ import pygame
 
 class Button:
 
-    def CreateButton(self, screen, x, y, path):
+    def CreateImageButton(self, screen, x, y, path):
         img = pygame.image.load(path);
         screen.blit(img, (x, y))
+
+    def CreateNoImageButton(self, screen, x,y, w, h, color):
+        pygame.draw.rect(screen, color, [x, y, w, h])
+
 
 
     def getPressedButton(self,x,y,w,h):
