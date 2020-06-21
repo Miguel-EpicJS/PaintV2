@@ -11,18 +11,21 @@ class KeyBoard:
 
 
     def DrawRect(self):
-        ok = False
+
+        mouse = pygame.mouse.get_pressed()
         key = pygame.key.get_pressed()
         if key[pygame.K_r]:
-            ok = True
+            return True
+        elif mouse == (0, 0, 1):
+            return False
 
-        return ok
 
     def DrawCircle(self):
-        ok = False
-        key = pygame.key.get_pressed()
-        if key[pygame.K_c]:
-            ok = True
 
-        return ok
+        key = pygame.key.get_pressed()
+        mouse = pygame.mouse.get_pressed()
+        if key[pygame.K_c]:
+            return True
+        elif mouse == (0, 0, 1):
+            return False
 
